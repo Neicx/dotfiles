@@ -1,0 +1,145 @@
+/* ============================================================
+   WAYBAR — Nord Theme for Hyprland
+   ============================================================ */
+
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  min-height: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+window#waybar {
+  background-color: #2e3440;
+  color: #e5e9f0;
+  border-bottom: 2px solid #3b4252;
+}
+
+tooltip {
+  background-color: #3b4252;
+  border: 1px solid #4c566a;
+  border-radius: 6px;
+  color: #e5e9f0;
+  padding: 6px 10px;
+}
+
+tooltip label {
+  color: #e5e9f0;
+}
+
+#workspaces button {
+  padding: 0 10px;
+  margin: 6px 3px;
+  background-color: #3b4252;
+  color: #81a1c1;
+  border-radius: 999px;
+  transition: all 0.15s ease;
+  min-width: 0;
+  min-height: 24px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+#bluetooth {
+  border-left: 1px solid #3b4252;
+  color: #81a1c1;
+  padding: 25px;
+}
+
+#bluetooth.connected {
+  color: #88c0d0;
+}
+
+#bluetooth.off {
+  color: #4c566a;
+}
+#workspaces button:hover {
+  background-color: #434c5e;
+  color: #88c0d0;
+}
+
+#workspaces button.active {
+  background-color: #5e81ac;
+  color: #eceff4;
+  padding: 0 14px;
+}
+
+#workspaces button.urgent {
+  background-color: #bf616a;
+  color: #eceff4;
+}
+#clock {
+  padding: 0 20px;
+  color: #88c0d0;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+}
+
+#network,
+#backlight,
+#pulseaudio,
+#battery {
+  padding: 0 14px;
+  color: #d8dee9;
+  background-color: transparent;
+  margin: 4px 0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#network:hover,
+#backlight:hover,
+#pulseaudio:hover,
+#battery:hover {
+  background-color: #3b4252;
+  color: #eceff4;
+}
+
+#network {
+  border-left: 1px solid #3b4252;
+  color: #8fbcbb;
+}
+
+#backlight {
+  border-left: 1px solid #3b4252;
+  color: #81a1c1;
+}
+ 
+#pulseaudio {
+  border-left: 1px solid #3b4252;
+  color: #88c0d0;
+}
+
+#pulseaudio.muted {
+  color: #4c566a;
+}
+
+#battery {
+  border-left: 1px solid #3b4252;
+  color: #a3be8c;
+  padding: 20px;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #a3be8c;
+}
+
+#battery.warning:not(.charging) {
+  color: #ebcb8b;
+}
+
+#battery.critical:not(.charging) {
+  color: #bf616a;
+  animation: blink 1.2s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.4; }
+  100% { opacity: 1; }
+}
