@@ -1,0 +1,66 @@
+RESET 0
+DIR 38;5;111
+LINK 38;5;189
+MULTIHARDLINK 38;5;189
+FIFO 38;5;221
+SOCK 38;5;221
+DOOR 38;5;221
+BLK 38;5;240
+CHR 38;5;240
+ORPHAN 38;5;196
+MISSING 38;5;196
+SETUID 38;5;221
+SETGID 38;5;221
+CAPABILITY 38;5;221
+STICKY_OTHER_WRITABLE 38;5;111
+OTHER_WRITABLE 38;5;111
+STICKY 38;5;111
+EXEC 38;5;156
+
+# Imágenes
+.jpg 38;5;183
+.jpeg 38;5;183
+.png 38;5;183
+.gif 38;5;183
+.svg 38;5;183
+
+# Video
+.mp4 38;5;147
+.mkv 38;5;147
+.avi 38;5;147
+
+# Audio
+.mp3 38;5;221
+.flac 38;5;221
+.wav 38;5;221
+.ogg 38;5;221
+
+# Archivos comprimidos
+.zip 38;5;203
+.tar 38;5;203
+.gz 38;5;203
+.xz 38;5;203
+.zst 38;5;203
+.rar 38;5;203
+
+# Código
+.py 38;5;156
+.rs 38;5;156
+.js 38;5;156
+.ts 38;5;156
+.c 38;5;156
+.cpp 38;5;156
+.sh 38;5;156
+
+# Config
+.conf 38;5;110
+.cfg 38;5;110
+.toml 38;5;110
+.yaml 38;5;110
+.json 38;5;110
+.ini 38;5;110
+
+# Docs
+.pdf 38;5;217
+.md 38;5;217
+.txt 38;5;217
