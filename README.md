@@ -1,15 +1,13 @@
-Paquetes de momento
+# Paquetes
 
------Pacman-----
-Ttf-hack-nerd
-rofi
-waybar
-spotify
-hyprshot
-discord
-obs-studio
+## Pacman
+- ttf-hack-nerd
+- rofi
+- waybar
+- spotify
+- hyprshot
+- discord
+- obs-studio
 
-
------AUR-----
-
-bruno
+## AUR
+- bruno
