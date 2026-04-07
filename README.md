@@ -9,6 +9,7 @@
 - discord
 - obs-studio
 - Libreoffice 
+- obsidian
 
 ## AUR
 - bruno
