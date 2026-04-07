@@ -8,6 +8,7 @@
 - hyprshot
 - discord
 - obs-studio
+- Libreoffice 
 
 ## AUR
 - bruno
