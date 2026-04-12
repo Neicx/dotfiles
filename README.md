@@ -10,6 +10,6 @@
 - obs-studio
 - Libreoffice 
 - obsidian
-
+- foliate
 ## AUR
 - bruno
