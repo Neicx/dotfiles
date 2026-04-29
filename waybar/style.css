@@ -1,0 +1,118 @@
+/* ============================================================
+   WAYBAR — Nord Minimal for Hyprland
+   ============================================================ */
+
+* {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  min-height: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+window#waybar {
+  background-color: #141720;
+  color: #cfcfcf;
+  border-bottom: 1px solid rgba(216, 222, 233, 0.08);
+}
+
+tooltip {
+  background-color: #2e3440;
+  border: 1px solid rgba(216, 222, 233, 0.1);
+  border-radius: 8px;
+  color: #d8dee9;
+  padding: 6px 12px;
+}
+
+tooltip label {
+  color: #d8dee9;
+}
+
+/* --- Workspaces --- */
+
+#workspaces button {
+  padding: 2px 10px;
+  margin: 0 2px;
+  background-color: transparent;
+  color: #cfcfcf;
+  font-weight: 600;
+  font-size: 11px;
+  min-height: 22px;
+}
+
+#workspaces button:hover {
+  background-color: transparent;
+  color: #81a1c1;
+}
+
+#workspaces button.active {
+  background-color: rgba(94, 129, 172, 0.2);
+  color: #88c0d0;
+  border: 1px solid rgba(136, 192, 208, 0.25);
+  padding: 2px 14px;
+  border-radius:0;
+}
+
+#workspaces button.urgent {
+  color: #bf616a;
+}
+
+/* --- Clock --- */
+
+#clock {
+  padding: 0 16px;
+  color: #cfcfcf;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* --- Módulos derecha --- */
+
+#network,
+#backlight,
+#pulseaudio,
+#bluetooth,
+#battery {
+  padding: 0 14px;
+  margin: 0;
+  background-color: transparent;
+  color: #cfcfcf;
+  border-left: 1px solid rgba(216, 222, 233, 0.07);
+  min-height: 30px;
+}
+
+#battery {
+  color: #a3be8c;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #a3be8c;
+}
+
+#battery.warning:not(.charging) {
+  color: #ebcb8b;
+}
+
+#battery.critical:not(.charging) {
+  color: #bf616a;
+  animation: blink 1.2s steps(1) infinite;
+}
+
+#network {
+  color: #88c0d0;
+}
+
+#bluetooth.connected {
+  color: #88c0d0;
+}
+
+#bluetooth.off {
+  color: #3b4252;
+}
+
+@keyframes blink {
+  50% { opacity: 0.35; }
+}
