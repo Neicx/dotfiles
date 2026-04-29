@@ -11,5 +11,6 @@
 - Libreoffice 
 - obsidian
 - foliate
+- hyprpaper
 ## AUR
 - bruno
