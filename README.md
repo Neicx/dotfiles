@@ -13,5 +13,7 @@
 - foliate
 - hyprpaper
 - hyprpicker
+- man-db
 ## AUR
 - bruno
+- helium-browser-bin
