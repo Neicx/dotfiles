@@ -1,4 +1,4 @@
-# Paquetes
+#Paquetes
 
 ## Pacman
 - ttf-hack-nerd
@@ -12,5 +12,6 @@
 - obsidian
 - foliate
 - hyprpaper
+- hyprpicker
 ## AUR
 - bruno
