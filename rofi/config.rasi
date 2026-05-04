@@ -1,0 +1,58 @@
+* {
+    background:                  rgba(31, 31, 31, 100%);
+    foreground:                  rgba(205, 214, 244, 100%);
+    lightbg:                     rgba(49, 50, 68, 100%);
+    normal-background:           rgba(31, 31, 31, 100%);
+    alternate-normal-background: rgba(40, 40, 40, 100%);
+    normal-foreground:           rgba(205, 214, 244, 100%);
+    alternate-normal-foreground: rgba(205, 214, 244, 100%);
+    selected-normal-background:  rgba(69, 71, 90, 100%);
+    selected-normal-foreground:  rgba(255, 255, 255, 100%);
+}
+
+configuration {
+	modes: "drun";
+	font: "Hack Nerd Font 12";
+	show-icons: true;
+}
+timeout {
+	action: "kb-cancel";
+	delay:  0;
+}
+filebrowser {
+	directories-first: true;
+	sorting-method:    "name";
+}
+window {
+	background-color: rgb( 31, 31, 31);
+	border:1;
+	padding:5;
+}
+  
+prompt{
+	text-color: white;
+}
+
+entry{
+	text-color: white;
+	placeholder:"";
+}
+
+element{
+	background-color: #1F1F1F;
+	spacing :10px;
+}
+element-text{
+	background-color:transparent;
+	text-color:inherit;
+}
+element-icon{
+	size:1.5em;
+}
+listview{
+	background-color: black;  
+	spacing:5px;
+	lines:10;
+	scrollbar:false;
+}
+
