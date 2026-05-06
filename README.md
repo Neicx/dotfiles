@@ -18,3 +18,4 @@
 - bruno
 - helium-browser-bin
 - nvim-packer-git
+- localsend
