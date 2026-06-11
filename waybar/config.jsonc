@@ -5,8 +5,8 @@
   "spacing": 0,
   "exclusive": true,
 
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock"],
+ "modules-left": ["hyprland/workspaces", "custom/player", "custom/prev", "custom/playpause", "custom/next"],
+ "modules-center": ["clock"],
   "modules-right": ["network","bluetooth", "backlight", "pulseaudio", "battery"],
 
   "hyprland/workspaces": {
@@ -14,6 +14,32 @@
     "on-click": "activate",
     "sort-by-number": true
   },
+
+"custom/player": {
+  "exec": "playerctl --player=termusic metadata --format '{{emoji(status)}} {{title}}' 2>/dev/null || echo ''",
+  "interval": 2,
+  "max-length": 40,
+  "escape": true
+},
+
+"custom/prev": {
+  "format": "󰒮",
+  "on-click": "playerctl --player=termusic previous",
+  "tooltip": false
+},
+
+"custom/playpause": {
+  "exec": "playerctl --player=termusic status 2>/dev/null | grep -q Playing && echo 󰏤 || echo 󰐊",
+  "on-click": "playerctl --player=termusic play-pause",
+  "interval": 2,
+  "tooltip": false
+},
+
+"custom/next": {
+  "format": "󰒭",
+  "on-click": "playerctl --player=termusic next",
+  "tooltip": false
+},
 
   "clock": {
     "format": "{:%H:%M  󰃭  %d/%m}",

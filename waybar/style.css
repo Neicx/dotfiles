@@ -111,7 +111,25 @@ tooltip label {
 #bluetooth.off {
   color: #3b4252;
 }
+#custom-player {
+  padding: 0 12px 0 16px;
+  color: #88c0d0;
+  font-size: 12px;
+}
 
+#custom-prev,
+#custom-playpause,
+#custom-next {
+  padding: 0 6px;
+  color: #81a1c1;
+  font-size: 13px;
+}
+
+#custom-prev:hover,
+#custom-playpause:hover,
+#custom-next:hover {
+  color: #88c0d0;
+}
 @keyframes blink {
   50% { opacity: 0.35; }
 }
