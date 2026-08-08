@@ -205,6 +205,7 @@ link_configs() {
         "$REPO_DIR/kwybars:$cfg/kwybars"
         "$REPO_DIR/rofi:$cfg/rofi"
         "$REPO_DIR/waybar:$cfg/waybar"
+        "$REPO_DIR/nvim:$cfg/nvim"
         "$REPO_DIR/.bashrc:$HOME/.bashrc"
         "$REPO_DIR/.dircolors:$HOME/.dircolors"
     )
