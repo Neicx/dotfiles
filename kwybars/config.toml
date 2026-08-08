@@ -6,7 +6,7 @@ height = 620
 
 [visualizer]
 layout = "radial"
-bars = 30
+bars = 48
 bar_width = 10
 gap = 6
 framerate = 60
