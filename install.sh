@@ -39,6 +39,8 @@ PACMAN_PKGS=(
     ttf-hack-nerd ttf-jetbrains-mono-nerd
     # apps del README
     discord obs-studio libreoffice-fresh obsidian foliate man-db
+    # dependencias de nvim
+    ripgrep fd nodejs
     # utilidades
     git base-devel unzip
 )
